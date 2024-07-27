@@ -3,3 +3,33 @@
     margin: 0;
     box-sizing: border-box;
 }
+body {
+    padding: 10px;
+    background-color: rgb(74, 125, 157);
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(246, 249, 249);
+}
+.form {
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.column_1,
+.column_2 {
+    align-items: flex-start;
+    flex: 1;
+    margin: 10px;
+}
+.column_1_row_1, 
+.column_1_row_2,
+.column_1_row_3 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#avatar_result {
+    max-width: 60px; 
+    max-height: 60px;
+    width: auto;
+    height: auto;
+}

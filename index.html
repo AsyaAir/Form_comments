@@ -7,9 +7,57 @@
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-<header><div>kdfkjdshfj</div></header>
-<main><div>sfnsnf</div></main>
-<footer><div>skdmflksdf</div></footer>
+    <header>
+        <h1>Comment service with spam filter</h1>
+    </header>
+    <main>
+        <div class="form">
+            <div class="column_1">
+                <h2>Leave your comment</h2>
+                <div class="column_1_row_1">
+                    <label for="name">Enter your Name:</label>
+                    <input type="text" id="name" autocomplete="on" list="nameSuggestions" required>
+                    <datalist id="nameSuggestions">
+                        <option value="John">
+                        <option value="Jane">
+                        <option value="Alex">
+                        <option value="Maria">
+                        <option value="Chris">
+                        <option value="Ivan">
+                        <option value="Anastasia">
+                        <option value="Sofia">
+                        <option value="Maxim">
+                        <option value="Michael">
+                    </datalist>
+                </div>
+                <div class="column_1_row_2">
+                    <label for="avatar">Enter your avatar link:</label>
+                    <input type="url" id="avatar" src="//" required>
+                </div>
+                <div class="column_1_row_3">
+                    <label for="comment">Leave a comment:</label>
+                    <textarea name="comment" id="comment" cols="40" rows="3" required wrap="hard"></textarea>
+                </div>
+                <div class="column_1_row_4">
+                    <button onclick="addComment()">Send</button>
+                </div>
+            </div>
+            <div class="column_2">
+                <h2>Chat</h2>
+                <div class="column_2_row_1">
+                    <img id="avatar_result" src="" alt="avatar">
+                    <p id="name_result"></p>
+                    <p id="comment_result"></p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <section>
+            <h3>byAsyaAir</h3>
+        </section>
+    </footer>
     <script src="./index.js"></script>
 </body>
 </html>
